@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4aa3c8b6-6ca2-4098-b8be-185d45a4e246" name="Changes" comment="change in principal form scene">
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/UI/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/UI/hello-view.fxml" afterDir="false" />
+    <list default="true" id="4aa3c8b6-6ca2-4098-b8be-185d45a4e246" name="Changes" comment="Change 🐸xmlns=&quot;http://javafx.com/javafx&quot; xmlns:fx=&quot;http://javafx.com/fxml&quot; in hello-view.fxml because caused problems.&#10;&#10;I found this solution here: https://stackoverflow.com/questions/35210120/javafx-fxml-api-version-warning&#10;&#10;so i chang it">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/UI/SecondWindowController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/UI/secondWindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/UI/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/UI/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/UI/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/UI/HelloController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +19,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -98,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687251079038</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Change 🐸xmlns=&quot;http://javafx.com/javafx&quot; xmlns:fx=&quot;http://javafx.com/fxml&quot; in hello-view.fxml because caused problems.&#10;&#10;I found this solution here: https://stackoverflow.com/questions/35210120/javafx-fxml-api-version-warning&#10;&#10;so i chang it">
+      <created>1687251400706</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1687251400706</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -107,6 +119,7 @@
     <MESSAGE value="User class created&#10;Repository interface created" />
     <MESSAGE value="Repository class created" />
     <MESSAGE value="change in principal form scene" />
-    <option name="LAST_COMMIT_MESSAGE" value="change in principal form scene" />
+    <MESSAGE value="Change xmlns=&quot;http://javafx.com/javafx&quot; xmlns:fx=&quot;http://javafx.com/fxml&quot; in hello-view.fxml because caused problems.&#10;&#10;I found this solution here: https://stackoverflow.com/questions/35210120/javafx-fxml-api-version-warning&#10;&#10;so i chang it" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change xmlns=&quot;http://javafx.com/javafx&quot; xmlns:fx=&quot;http://javafx.com/fxml&quot; in hello-view.fxml because caused problems.&#10;&#10;I found this solution here: https://stackoverflow.com/questions/35210120/javafx-fxml-api-version-warning&#10;&#10;so i chang it" />
   </component>
 </project>
