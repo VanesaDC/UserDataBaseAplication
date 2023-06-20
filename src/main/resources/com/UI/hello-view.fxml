@@ -8,16 +8,19 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" prefHeight="500.0" prefWidth="700.0" spacing="20.0" style="-fx-background-color: #4db6ac;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.UI.HelloController">
+<VBox alignment="CENTER" prefHeight="500.0" prefWidth="700.0" spacing="20.0" style="-fx-background-color: #9C27B0;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.UI.HelloController">
   <padding>
     <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
   </padding>
     <ImageView fitHeight="448.0" fitWidth="657.0" pickOnBounds="true" preserveRatio="true">
-        <Image url="@users.jpg"/>
+        <Image url="@users.jpg" />
     </ImageView>
-
-  <Label fx:id="welcomeText" />
-  <Button id="btnIn" onAction="#onHelloButtonClick" style="-fx-background-color: #e91e63;" text="Entrar" textFill="WHITE">
+   <Label fx:id="txtTitulo" text="Acceso al formulario" textFill="WHITE">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Label>
+  <Button id="btnIn" fx:id="btnIn" onAction="#onHelloButtonClick" style="-fx-background-color: #009688;" text="Entrar" textFill="WHITE">
       <font>
          <Font name="System Bold" size="14.0" />
       </font></Button>

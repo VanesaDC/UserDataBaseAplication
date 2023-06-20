@@ -24,6 +24,7 @@ public class HelloController {
             Scene scene = new Scene(root,700,500);
             Stage stage = new Stage();
             stage.initModality(Modality.APPLICATION_MODAL);
+            stage.setTitle("Formulario de datos");
             stage.setScene(scene);
             stage.showAndWait();
 
@@ -31,6 +32,6 @@ public class HelloController {
             throw new RuntimeException(e);
         }
 
-        welcomeText.setText("Welcome to JavaFX Application!");
+
     }
 }
