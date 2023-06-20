@@ -6,13 +6,13 @@ public class Age {
     private Age(int age) {
         this.age = age;
     }
-    public static Age createAge(int age){
+    public static Age createAge(int age) throws AgeException{
         boolean ageIsLessThanZero = age<0;
         boolean ageIsGreaterThanAHundred = age >100;
         boolean ageIsADecimalNumber = age % 1 != 0;
 
         if (ageIsLessThanZero) {
-            throw new Error("Age has to be greater than zero");
+            throw new AgeException("La edad no puede ser menor que cero");
         }
         if (ageIsGreaterThanAHundred)
 
