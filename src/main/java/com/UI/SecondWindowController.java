@@ -1,27 +1,27 @@
 package com.UI;
 
-import Domain.Email;
-import Domain.EmailException;
-import Domain.Name;
-import Domain.NameException;
+import Domain.*;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 import javafx.scene.control.Tooltip;
 import javafx.stage.Stage;
 
 public class SecondWindowController {
     @FXML
     private Button btnSave, btnUpDate, btnDelete, btnSelect, btnCancel;
+    @FXML
+    private TextField edtDni, edtName, edtAge,edtEmail;
 
 
     public void saveUser()  {
         try {
-            Name.createName("Vasseq90");
-            Email.createEmail("34");
+            Dni.createDni(edtDni.getText());
+            Name.createName(edtName.getText());
+            Age.createAge(Integer.parseInt(edtAge.getText()));// 🐸 Cuando escribe letras se para la aplicación
+            Email.createEmail(edtEmail.getText());
 
-        } catch (EmailException e) {
-            AlertPanel.showAttentionMessageSaying(e.getMessage());
-        } catch (NameException e) {
+        } catch (EmailException | DniException | AgeException | NameException e) {
             AlertPanel.showAttentionMessageSaying(e.getMessage());
         }
 
