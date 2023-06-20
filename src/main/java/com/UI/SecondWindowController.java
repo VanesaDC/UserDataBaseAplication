@@ -3,6 +3,7 @@ package com.UI;
 import Domain.Email;
 import Domain.EmailException;
 import Domain.Name;
+import Domain.NameException;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Tooltip;
@@ -15,8 +16,13 @@ public class SecondWindowController {
 
     public void saveUser()  {
         try {
+            Name.createName("Vasseq90");
+
             Email.createEmail("34");
+
         } catch (EmailException e) {
+            AlertPanel.showAttentionMessageSaying(e.getMessage());
+        } catch (NameException e) {
             AlertPanel.showAttentionMessageSaying(e.getMessage());
         }
 
