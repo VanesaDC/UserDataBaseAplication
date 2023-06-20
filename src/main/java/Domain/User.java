@@ -3,7 +3,7 @@ package Domain;
 import java.util.Objects;
 
 public class User {
-    private String dni;
+    private final String dni;
     private String name;
     private String surname;
     private int age;
