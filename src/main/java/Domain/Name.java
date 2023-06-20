@@ -1,5 +1,7 @@
 package Domain;
 
+import javafx.scene.control.Alert;
+
 public class Name {
     private String name;
     private Name(String name){
@@ -12,20 +14,22 @@ public class Name {
         boolean nameNotContainsOnlyLetters = !name.matches("[a-zA-Z]*");
         boolean nameIsEmpty = name.isEmpty();
         if (nameIsEmpty){
-            throw new Error ("El nombre no puede estar vacío");
-            //showAlertNameIsEmpty();
+            showAttentionMessageSaying("El nombre no puede estar vacío.");
         }
         if (nameNotContainsOnlyLetters){
-            throw new Error ("El nombre solo puede contener letras");
-            //showAlertNameMustContainsOnlyLetters();
+            showAttentionMessageSaying("El nombre solo puede contener letras.");
         }
         return new Name (name);
     }
 
-    private void showAlertNameMustContainsOnlyLetters() {
+    private static void showAttentionMessageSaying(String message) {
+        Alert alert = new Alert (Alert.AlertType.INFORMATION);
+        alert.setHeaderText(null);
+        alert.setTitle("atención");
+        alert.setContentText(message);
+        alert.showAndWait();
 
     }
 
-    private void showAlertNameIsEmpty() {
-    }
+
 }

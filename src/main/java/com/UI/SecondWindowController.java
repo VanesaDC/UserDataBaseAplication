@@ -1,5 +1,6 @@
 package com.UI;
 
+import Domain.Name;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Tooltip;
@@ -9,8 +10,11 @@ public class SecondWindowController {
     @FXML
     private Button btnSave, btnUpDate, btnDelete, btnSelect, btnCancel;
 
+
     public void saveUser(){
+
         //Crear usuario con los datos de los campos. Validando datos
+
     }
     public void selectUser(){
 

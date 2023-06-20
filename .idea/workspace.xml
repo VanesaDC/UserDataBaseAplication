@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4aa3c8b6-6ca2-4098-b8be-185d45a4e246" name="Changes" comment="🙂 ShowInstructions for every button. Show a text when mouse entered in button">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Domain/Name.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Domain/NameTest.java" afterDir="false" />
+    <list default="true" id="4aa3c8b6-6ca2-4098-b8be-185d45a4e246" name="Changes" comment="🟢should_decline_empty_name()&#10;🟢should_accepts_name_that_contains_only_letters()">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Name.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Name.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/UI/SecondWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/UI/SecondWindowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/UI/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/UI/hello-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/UI/secondWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/UI/secondWindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Domain/NameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Domain/NameTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,8 +115,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.NameTest" />
-        <item itemvalue="JUnit.NameTest.should_decline_empty_name" />
         <item itemvalue="Application.HelloApplication" />
+        <item itemvalue="JUnit.NameTest.should_decline_empty_name" />
       </list>
     </recent_temporary>
   </component>
@@ -209,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687264558023</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="🟢should_decline_empty_name()&#10;🟢should_accepts_name_that_contains_only_letters()">
+      <created>1687274279363</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1687274279363</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -223,6 +227,7 @@
     <MESSAGE value=" add image to secondWindow.fxml" />
     <MESSAGE value=" closeSecondWindow() method create" />
     <MESSAGE value=" ShowInstructions for every button. Show a text when mouse entered in button" />
-    <option name="LAST_COMMIT_MESSAGE" value=" ShowInstructions for every button. Show a text when mouse entered in button" />
+    <MESSAGE value="should_decline_empty_name()&#10;should_accepts_name_that_contains_only_letters()" />
+    <option name="LAST_COMMIT_MESSAGE" value="should_decline_empty_name()&#10;should_accepts_name_that_contains_only_letters()" />
   </component>
 </project>
