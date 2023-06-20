@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4aa3c8b6-6ca2-4098-b8be-185d45a4e246" name="Changes" comment="🙂 closeSecondWindow() method create">
+    <list default="true" id="4aa3c8b6-6ca2-4098-b8be-185d45a4e246" name="Changes" comment="🙂 ShowInstructions for every button. Show a text when mouse entered in button">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Domain/Name.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Domain/NameTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/UI/SecondWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/UI/SecondWindowController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/UI/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/UI/hello-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/UI/secondWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/UI/secondWindow.fxml" afterDir="false" />
@@ -20,6 +23,7 @@
       <list>
         <option value="FxmlFile" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -40,15 +44,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="Domain" />
@@ -57,8 +63,14 @@
       <recent name="C:\Users\vanes\IdeaProjects\MySqlFx\src\main\resources\com\UI" />
       <recent name="C:\Users\vanes\IdeaProjects\MySqlFx\src\main\resources" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="Domain" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.NameTest">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.UI.HelloApplication" />
       <module name="MySqlFx" />
@@ -72,8 +84,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="NameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MySqlFx" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Domain" />
+      <option name="MAIN_CLASS_NAME" value="Domain.NameTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NameTest.should_decline_empty_name" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MySqlFx" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Domain" />
+      <option name="MAIN_CLASS_NAME" value="Domain.NameTest" />
+      <option name="METHOD_NAME" value="should_decline_empty_name" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.NameTest" />
+        <item itemvalue="JUnit.NameTest.should_decline_empty_name" />
         <item itemvalue="Application.HelloApplication" />
       </list>
     </recent_temporary>
@@ -157,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687263161674</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="🙂 ShowInstructions for every button. Show a text when mouse entered in button">
+      <created>1687264558023</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1687264558023</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -170,6 +222,7 @@
     <MESSAGE value=" secondWindow.fxml created" />
     <MESSAGE value=" add image to secondWindow.fxml" />
     <MESSAGE value=" closeSecondWindow() method create" />
-    <option name="LAST_COMMIT_MESSAGE" value=" closeSecondWindow() method create" />
+    <MESSAGE value=" ShowInstructions for every button. Show a text when mouse entered in button" />
+    <option name="LAST_COMMIT_MESSAGE" value=" ShowInstructions for every button. Show a text when mouse entered in button" />
   </component>
 </project>

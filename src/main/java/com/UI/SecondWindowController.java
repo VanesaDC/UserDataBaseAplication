@@ -29,15 +29,17 @@ public class SecondWindowController {
         Stage stage = (Stage) btnCancel.getScene().getWindow();
         stage.close();
     }
-
     public void showInstructionsDelete(){
-        btnDelete.setTooltip(new Tooltip("Debe buscar el usuario primero"));
+        btnDelete.setTooltip(new Tooltip("Click si quiere eliminar al usuario que se muestra"));
     }
     public void showInstructionsSelect(){
         btnSelect.setTooltip(new Tooltip("Haga clic después de escribir el DNI de la persona"));
     }
     public void showInstructionsSave(){
         btnSave.setTooltip(new Tooltip("Haga clic después de completar todos los campos"));
+    }
+    public void showInstructionsUpDate(){
+        btnUpDate.setTooltip(new Tooltip("Haga clic después de modificar todos los campos que desee cambiar"));
     }
 
 }
