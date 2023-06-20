@@ -12,7 +12,5 @@ class DniTest {
         String message = assertThrows(DniException.class, ()->Dni.createDni(dni)).getMessage();
 
         assertEquals("El DNI que escribió no es válido.", message);
-
-
     }
 }
