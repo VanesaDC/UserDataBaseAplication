@@ -27,22 +27,22 @@
             <TextField fx:id="edtName" layoutX="35.0" layoutY="169.0" prefHeight="32.0" prefWidth="233.0" text="Nombre" />
             <TextField fx:id="edtSurname" layoutX="35.0" layoutY="222.0" prefHeight="32.0" prefWidth="296.0" text="Apellidos" />
             <TextField fx:id="edtAge" layoutX="35.0" layoutY="275.0" prefHeight="32.0" prefWidth="113.0" text="Edad" />
-            <Button fx:id="btnSave" layoutX="35.0" layoutY="399.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="114.0" style="-fx-background-color: #009688;" text="Guardar" textFill="WHITE">
+            <Button fx:id="btnSave" layoutX="35.0" layoutY="399.0" mnemonicParsing="false" onAction="#saveUser" onMouseEntered="#showInstructionsSave" prefHeight="23.0" prefWidth="114.0" style="-fx-background-color: #009688;" text="Guardar" textFill="WHITE">
                <font>
                   <Font size="14.0" />
                </font>
             </Button>
-            <Button fx:id="btnSelect" layoutX="161.0" layoutY="399.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="114.0" style="-fx-background-color: #009688;" text="Buscar" textFill="WHITE">
+            <Button fx:id="btnSelect" layoutX="161.0" layoutY="399.0" mnemonicParsing="false" onAction="#selectUser" onMouseEntered="#showInstructionsSelect" prefHeight="23.0" prefWidth="114.0" style="-fx-background-color: #009688;" text="Buscar" textFill="WHITE">
                <font>
                   <Font size="14.0" />
                </font>
             </Button>
-            <Button fx:id="btnUpDate" layoutX="287.0" layoutY="399.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="114.0" style="-fx-background-color: #009688;" text="Actualizar" textFill="WHITE">
+            <Button fx:id="btnUpDate" layoutX="287.0" layoutY="399.0" mnemonicParsing="false" onAction="#udDateUser" prefHeight="23.0" prefWidth="114.0" style="-fx-background-color: #009688;" text="Actualizar" textFill="WHITE">
                <font>
                   <Font size="14.0" />
                </font>
             </Button>
-            <Button fx:id="btnDelete" layoutX="161.0" layoutY="448.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="114.0" style="-fx-background-color: #E1BEE7;" text="Eliminar" textFill="#9e0648">
+            <Button fx:id="btnDelete" layoutX="161.0" layoutY="448.0" mnemonicParsing="false" onAction="#deleteUser" onMouseEntered="#showInstructionsDelete" prefHeight="23.0" prefWidth="114.0" style="-fx-background-color: #E1BEE7;" text="Eliminar" textFill="#9e0648">
                <font>
                   <Font size="14.0" />
                </font>

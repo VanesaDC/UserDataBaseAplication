@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4aa3c8b6-6ca2-4098-b8be-185d45a4e246" name="Changes" comment="🙂 add image to secondWindow.fxml">
+    <list default="true" id="4aa3c8b6-6ca2-4098-b8be-185d45a4e246" name="Changes" comment="🙂 closeSecondWindow() method create">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/UI/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/UI/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/UI/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/UI/HelloController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/UI/SecondWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/UI/SecondWindowController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/UI/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/UI/hello-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/UI/secondWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/UI/secondWindow.fxml" afterDir="false" />
@@ -152,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687259511589</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="🙂 closeSecondWindow() method create">
+      <created>1687263161674</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1687263161674</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -164,6 +169,7 @@
     <MESSAGE value="Change xmlns=&quot;http://javafx.com/javafx&quot; xmlns:fx=&quot;http://javafx.com/fxml&quot; in hello-view.fxml because caused problems.&#10;&#10;I found this solution here: https://stackoverflow.com/questions/35210120/javafx-fxml-api-version-warning&#10;&#10;so i chang it" />
     <MESSAGE value=" secondWindow.fxml created" />
     <MESSAGE value=" add image to secondWindow.fxml" />
-    <option name="LAST_COMMIT_MESSAGE" value=" add image to secondWindow.fxml" />
+    <MESSAGE value=" closeSecondWindow() method create" />
+    <option name="LAST_COMMIT_MESSAGE" value=" closeSecondWindow() method create" />
   </component>
 </project>

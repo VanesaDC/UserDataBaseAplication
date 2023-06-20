@@ -2,6 +2,7 @@ package com.UI;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.Tooltip;
 import javafx.stage.Stage;
 
 public class SecondWindowController {
@@ -10,14 +11,33 @@ public class SecondWindowController {
 
     public void saveUser(){
         //Crear usuario con los datos de los campos. Validando datos
-
     }
+    public void selectUser(){
 
+
+        //busca usuario en base de datos con dni para y muestra los datos en los campos
+    }
+    public void udDateUser(){
+        //Crea un usuario con los nuevos datos y lo actualiza en la bd con el id seleccionado (Lo crea para validar los campos)
+    }
+    public void deleteUser(){
+        btnDelete.setTooltip(new Tooltip("Debe buscar el usuario primero"));
+        //Lama al método delete de la base de datos con el dni
+    }
 
     public void closeSecondWindow(){
         Stage stage = (Stage) btnCancel.getScene().getWindow();
         stage.close();
+    }
 
+    public void showInstructionsDelete(){
+        btnDelete.setTooltip(new Tooltip("Debe buscar el usuario primero"));
+    }
+    public void showInstructionsSelect(){
+        btnSelect.setTooltip(new Tooltip("Haga clic después de escribir el DNI de la persona"));
+    }
+    public void showInstructionsSave(){
+        btnSave.setTooltip(new Tooltip("Haga clic después de completar todos los campos"));
     }
 
 }
