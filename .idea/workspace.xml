@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4aa3c8b6-6ca2-4098-b8be-185d45a4e246" name="Changes" comment="Change 🐸xmlns=&quot;http://javafx.com/javafx&quot; xmlns:fx=&quot;http://javafx.com/fxml&quot; in hello-view.fxml because caused problems.&#10;&#10;I found this solution here: https://stackoverflow.com/questions/35210120/javafx-fxml-api-version-warning&#10;&#10;so i chang it">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/UI/SecondWindowController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/UI/secondWindow.fxml" afterDir="false" />
+    <list default="true" id="4aa3c8b6-6ca2-4098-b8be-185d45a4e246" name="Changes" comment="🙂 secondWindow.fxml created">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/UI/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/UI/HelloApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/UI/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/UI/HelloController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,6 +55,26 @@
       <recent name="C:\Users\vanes\IdeaProjects\MySqlFx\src\main\resources\com\UI" />
       <recent name="C:\Users\vanes\IdeaProjects\MySqlFx\src\main\resources" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.UI.HelloApplication" />
+      <module name="MySqlFx" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.UI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.HelloApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -110,7 +127,21 @@
       <option name="project" value="LOCAL" />
       <updated>1687251400706</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="🙂 secondWindow.fxml created">
+      <created>1687254554757</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1687254554757</updated>
+    </task>
+    <task id="LOCAL-00008" summary="🙂 secondWindow.fxml created">
+      <created>1687254970908</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1687254970908</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -120,6 +151,7 @@
     <MESSAGE value="Repository class created" />
     <MESSAGE value="change in principal form scene" />
     <MESSAGE value="Change xmlns=&quot;http://javafx.com/javafx&quot; xmlns:fx=&quot;http://javafx.com/fxml&quot; in hello-view.fxml because caused problems.&#10;&#10;I found this solution here: https://stackoverflow.com/questions/35210120/javafx-fxml-api-version-warning&#10;&#10;so i chang it" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change xmlns=&quot;http://javafx.com/javafx&quot; xmlns:fx=&quot;http://javafx.com/fxml&quot; in hello-view.fxml because caused problems.&#10;&#10;I found this solution here: https://stackoverflow.com/questions/35210120/javafx-fxml-api-version-warning&#10;&#10;so i chang it" />
+    <MESSAGE value=" secondWindow.fxml created" />
+    <option name="LAST_COMMIT_MESSAGE" value=" secondWindow.fxml created" />
   </component>
 </project>
