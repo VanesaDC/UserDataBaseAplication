@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4aa3c8b6-6ca2-4098-b8be-185d45a4e246" name="Changes" comment="Repository class created">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/UI/users.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/UI/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/UI/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/UI/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/UI/HelloController.java" afterDir="false" />
+    <list default="true" id="4aa3c8b6-6ca2-4098-b8be-185d45a4e246" name="Changes" comment="change in principal form scene">
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/UI/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/UI/hello-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687249201253</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="change in principal form scene">
+      <created>1687251079038</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1687251079038</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -102,6 +106,7 @@
     <MESSAGE value="a warning about module-info.java was solved" />
     <MESSAGE value="User class created&#10;Repository interface created" />
     <MESSAGE value="Repository class created" />
-    <option name="LAST_COMMIT_MESSAGE" value="Repository class created" />
+    <MESSAGE value="change in principal form scene" />
+    <option name="LAST_COMMIT_MESSAGE" value="change in principal form scene" />
   </component>
 </project>
