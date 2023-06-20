@@ -1,4 +1,4 @@
-package com.example.mysqlfx;
+package com.UI;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;

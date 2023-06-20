@@ -5,6 +5,6 @@ module com.example.mysqlfx {
     requires mysql.connector.j;
 
 
-    opens com.example.mysqlfx to javafx.fxml;
-    exports com.example.mysqlfx;
+    opens com.UI to javafx.fxml;
+    exports com.UI;
 }
