@@ -21,7 +21,7 @@ public class HelloController {
         try {
             Parent root = loader.load();
             SecondWindowController controller = loader.getController();
-            Scene scene = new Scene(root);
+            Scene scene = new Scene(root,500,500);
             Stage stage = new Stage();
             stage.initModality(Modality.APPLICATION_MODAL);
             stage.setScene(scene);
