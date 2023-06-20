@@ -9,13 +9,16 @@ class NameTest {
     @Test
     void should_decline_empty_name(){
         String name= "";
-        a
-        assertEquals("El nombre no puede estar vacío.", Name.createName(name));
+        assertThatThrownBy(()->{
+            Name.createName(name);
+        }).isInstanceOf(Error.class).hasMessage("El nombre no puede estar vacío.");
     }
     @Test
     void should_accepts_name_that_contains_only_letters(){
         String name= "Vanes22";
-        assertEquals("El nombre solo puede contener letras", Name.createName(name));
+        assertThatThrownBy(()->{
+            Name.createName(name);
+        }).isInstanceOf(Error.class).hasMessage("El nombre solo puede contener letras.");
     }
 
 }

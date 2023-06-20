@@ -1,5 +1,7 @@
 package com.UI;
 
+import Domain.Email;
+import Domain.EmailException;
 import Domain.Name;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -11,7 +13,8 @@ public class SecondWindowController {
     private Button btnSave, btnUpDate, btnDelete, btnSelect, btnCancel;
 
 
-    public void saveUser(){
+    public void saveUser() throws EmailException {
+        Email.createEmail("34");
 
         //Crear usuario con los datos de los campos. Validando datos
 

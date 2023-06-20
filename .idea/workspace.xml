@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4aa3c8b6-6ca2-4098-b8be-185d45a4e246" name="Changes" comment="🟢should_decline_empty_name()&#10;🟢should_accepts_name_that_contains_only_letters()">
+    <list default="true" id="4aa3c8b6-6ca2-4098-b8be-185d45a4e246" name="Changes" comment="Deleted throw error. Now show an alert message">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Domain/Email.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Domain/EmailException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Domain/EmailTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Name.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Name.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/UI/SecondWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/UI/SecondWindowController.java" afterDir="false" />
@@ -67,7 +70,7 @@
       <recent name="Domain" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.NameTest">
+  <component name="RunManager" selected="JUnit.EmailTest">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.UI.HelloApplication" />
       <module name="MySqlFx" />
@@ -77,6 +80,21 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmailTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MySqlFx" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Domain" />
+      <option name="MAIN_CLASS_NAME" value="Domain.EmailTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -114,8 +132,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.NameTest" />
+        <item itemvalue="JUnit.EmailTest" />
         <item itemvalue="Application.HelloApplication" />
+        <item itemvalue="JUnit.NameTest" />
         <item itemvalue="JUnit.NameTest.should_decline_empty_name" />
       </list>
     </recent_temporary>
@@ -213,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687274279363</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Deleted throw error. Now show an alert message">
+      <created>1687275892557</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1687275892557</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -228,6 +254,7 @@
     <MESSAGE value=" closeSecondWindow() method create" />
     <MESSAGE value=" ShowInstructions for every button. Show a text when mouse entered in button" />
     <MESSAGE value="should_decline_empty_name()&#10;should_accepts_name_that_contains_only_letters()" />
-    <option name="LAST_COMMIT_MESSAGE" value="should_decline_empty_name()&#10;should_accepts_name_that_contains_only_letters()" />
+    <MESSAGE value="Deleted throw error. Now show an alert message" />
+    <option name="LAST_COMMIT_MESSAGE" value="Deleted throw error. Now show an alert message" />
   </component>
 </project>

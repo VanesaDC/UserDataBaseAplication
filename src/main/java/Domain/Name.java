@@ -14,12 +14,15 @@ public class Name {
         boolean nameNotContainsOnlyLetters = !name.matches("[a-zA-Z]*");
         boolean nameIsEmpty = name.isEmpty();
         if (nameIsEmpty){
+
             showAttentionMessageSaying("El nombre no puede estar vacío.");
+
         }
         if (nameNotContainsOnlyLetters){
             showAttentionMessageSaying("El nombre solo puede contener letras.");
+            return null;
         }
-        return new Name (name);
+        return new Name(name);
     }
 
     private static void showAttentionMessageSaying(String message) {
@@ -28,7 +31,6 @@ public class Name {
         alert.setTitle("atención");
         alert.setContentText(message);
         alert.showAndWait();
-
     }
 
 
