@@ -17,7 +17,6 @@ public class SecondWindowController {
     public void saveUser()  {
         try {
             Name.createName("Vasseq90");
-
             Email.createEmail("34");
 
         } catch (EmailException e) {

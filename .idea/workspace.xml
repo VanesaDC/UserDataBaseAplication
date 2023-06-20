@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4aa3c8b6-6ca2-4098-b8be-185d45a4e246" name="Changes" comment="🟢 should_throw_a_exception_when_email_is_not_correct()">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Domain/NameException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/UI/AlertPanel.java" afterDir="false" />
+    <list default="true" id="4aa3c8b6-6ca2-4098-b8be-185d45a4e246" name="Changes" comment="🟢should_decline_empty_name()&#10;🟢should_accepts_name_that_contains_only_letters()">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Domain/Dni.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Domain/DniException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Domain/DniTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Email.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Email.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Name.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Name.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/UI/SecondWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/UI/SecondWindowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Domain/NameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Domain/NameTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +21,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -70,7 +69,7 @@
       <recent name="Domain" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.HelloApplication">
+  <component name="RunManager" selected="JUnit.DniTest">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.UI.HelloApplication" />
       <module name="MySqlFx" />
@@ -80,6 +79,21 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DniTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MySqlFx" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Domain" />
+      <option name="MAIN_CLASS_NAME" value="Domain.DniTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -132,6 +146,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DniTest" />
         <item itemvalue="Application.HelloApplication" />
         <item itemvalue="JUnit.NameTest" />
         <item itemvalue="JUnit.EmailTest" />
@@ -246,7 +261,21 @@
       <option name="project" value="LOCAL" />
       <updated>1687288580549</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="🟢should_decline_empty_name()&#10;🟢should_accepts_name_that_contains_only_letters()">
+      <created>1687289787683</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1687289787683</updated>
+    </task>
+    <task id="LOCAL-00016" summary="🟢should_decline_empty_name()&#10;🟢should_accepts_name_that_contains_only_letters()">
+      <created>1687291711225</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1687291711225</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -260,9 +289,9 @@
     <MESSAGE value=" add image to secondWindow.fxml" />
     <MESSAGE value=" closeSecondWindow() method create" />
     <MESSAGE value=" ShowInstructions for every button. Show a text when mouse entered in button" />
-    <MESSAGE value="should_decline_empty_name()&#10;should_accepts_name_that_contains_only_letters()" />
     <MESSAGE value="Deleted throw error. Now show an alert message" />
     <MESSAGE value=" should_throw_a_exception_when_email_is_not_correct()" />
-    <option name="LAST_COMMIT_MESSAGE" value=" should_throw_a_exception_when_email_is_not_correct()" />
+    <MESSAGE value="should_decline_empty_name()&#10;should_accepts_name_that_contains_only_letters()" />
+    <option name="LAST_COMMIT_MESSAGE" value="should_decline_empty_name()&#10;should_accepts_name_that_contains_only_letters()" />
   </component>
 </project>
