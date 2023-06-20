@@ -13,8 +13,12 @@ public class SecondWindowController {
     private Button btnSave, btnUpDate, btnDelete, btnSelect, btnCancel;
 
 
-    public void saveUser() throws EmailException {
-        Email.createEmail("34");
+    public void saveUser()  {
+        try {
+            Email.createEmail("34");
+        } catch (EmailException e) {
+            AlertPanel.showAttentionMessageSaying(e.getMessage());
+        }
 
         //Crear usuario con los datos de los campos. Validando datos
 

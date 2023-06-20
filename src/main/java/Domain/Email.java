@@ -14,22 +14,16 @@ public class Email {
         return email;
     }
     public static Email createEmail (String email) throws EmailException{
-        //try {
+
             Pattern pattern = Pattern.compile("^([0-9a-zA-Z]+[-._+&])*[0-9a-zA-Z]+@([-0-9a-zA-Z]+[.])+[a-zA-Z]{2,6}$");
             Matcher mather = pattern.matcher(email);
             boolean emailIsNoValid = !mather.find();
-
             if (emailIsNoValid){
                 throw new EmailException("Error: El email tiene algún fallo");
             }
-        //} catch (EmailException e) {
-            //System.out.println(e.getMessage());
-            showAttentionMessageSaying("El email tiene algún error");
-        //}
-        System.out.println("El programa sigue");
         return new Email(email);
     }
-    private static void showAttentionMessageSaying(String message) {
+    public static void showAttentionMessageSaying(String message) {
         Alert alert = new Alert (Alert.AlertType.INFORMATION);
         alert.setHeaderText(null);
         alert.setTitle("atención");
