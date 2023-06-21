@@ -9,6 +9,12 @@ public class Age {
         this.age = age;
     }
 
+    public String getAge() {
+        return age;
+    }
+
+
+
     public static Age createAge(String number) throws AgeException{
         Pattern patron = Pattern.compile("[0-9]+");
         boolean notIsNumeric = !(patron.matcher(number).find());

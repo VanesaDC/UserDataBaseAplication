@@ -11,6 +11,10 @@ public class Dni {
         this.dni = dni;
     }
 
+    public String getDni() {
+        return dni;
+    }
+
     public static Dni createDni (String dni) throws DniException{
 
         final Pattern REGEXP = Pattern.compile("[0-9]{8}[A-Z]");

@@ -1,5 +1,8 @@
 package com.UI;
 
+import Aplication.UserSingUp;
+import DataBase.MySqlRepository;
+import DataBase.MySqlRepositoryException;
 import Domain.*;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -16,16 +19,19 @@ public class SecondWindowController {
 
     //Crear usuario con los datos de los campos. Validando datos
     public void saveUser()  {
-        try {
-            Dni.createDni(edtDni.getText());
-            Name.createName(edtName.getText());
-            Age.createAge(edtAge.getText());// 🐸 Cuando escribe letras se para la aplicación
-            Email.createEmail(edtEmail.getText());
 
-        } catch (EmailException | DniException | AgeException | NameException e) {
+        try {
+            Dni dni= Dni.createDni(edtDni.getText());
+            Name name =Name.createName(edtName.getText());
+            Age age= Age.createAge(edtAge.getText());
+            Email email= Email.createEmail(edtEmail.getText());
+            User user = new User(dni, name, age,email);
+            MySqlRepository mySqlRepository = new MySqlRepository();
+            UserSingUp userSingUp = new UserSingUp(mySqlRepository);
+            userSingUp.saveUser(user);
+        } catch (EmailException | DniException | AgeException | NameException | MySqlRepositoryException e) {
             AlertPanel.showAttentionMessageSaying(e.getMessage());
         }
-
 
 
     }

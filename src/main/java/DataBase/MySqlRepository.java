@@ -2,7 +2,9 @@ package DataBase;
 
 import Domain.User;
 
-public class Repository implements UserRepository{
+import java.util.List;
+
+public class MySqlRepository implements MySqlUserRepository {
     @Override
     public void saveUser(User user) {
     }
@@ -13,9 +15,11 @@ public class Repository implements UserRepository{
     public void deleteUser(User user) {
     }
     @Override
-    public void getUser(String dni) {
+    public List<User> getUserByDni(User user) {
+        return null;
     }
     @Override
-    public void getAllUser() {
+    public List<User> getAllUser() {
+        return null;
     }
 }

@@ -2,12 +2,14 @@ package DataBase;
 
 import Domain.User;
 
-interface UserRepository {
+import java.util.List;
+
+interface MySqlUserRepository {
     void saveUser (User user);
     void upDateUser (User user);
     void deleteUser (User user);
-    void getUser (String dni);
-    void getAllUser();
+    List<User> getUserByDni(User user);
+    List<User> getAllUser();
 
 
 
