@@ -27,6 +27,7 @@
             <TextField fx:id="edtDni" layoutX="36.0" layoutY="104.0" prefHeight="32.0" prefWidth="231.0" text="DNI" />
             <TextField fx:id="edtName" layoutX="35.0" layoutY="151.0" prefHeight="32.0" prefWidth="233.0" text="Nombre" />
             <TextField fx:id="edtAge" layoutX="36.0" layoutY="201.0" prefHeight="32.0" prefWidth="113.0" text="Edad" />
+            <TextField id="edtEmail" fx:id="edtEmail" layoutX="36.0" layoutY="250.0" prefHeight="32.0" prefWidth="113.0" text="email" />
             <Button fx:id="btnSave" layoutX="35.0" layoutY="399.0" mnemonicParsing="false" onAction="#saveUser" onMouseEntered="#showInstructionsSave" prefHeight="23.0" prefWidth="114.0" style="-fx-background-color: #009688;" text="Guardar" textFill="WHITE">
                <font>
                   <Font size="14.0" />
@@ -57,7 +58,6 @@
                   <Font size="24.0" />
                </font>
             </Label>
-            <TextField id="edtEmail" fx:id="edtEmail" layoutX="36.0" layoutY="250.0" prefHeight="32.0" prefWidth="113.0" text="email" />
          </children></AnchorPane>
    </center>
 </BorderPane>

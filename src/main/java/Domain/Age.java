@@ -1,12 +1,14 @@
 package Domain;
 
 public class Age {
-    private int age;
+    private String age;
 
-    private Age(int age) {
+    private Age(String age) {
         this.age = age;
     }
-    public static Age createAge(int age) throws AgeException{
+
+    public static Age createAge(String number) throws AgeException{
+        int age = Integer.parseInt(number);
         boolean ageIsLessThanZero = age<0;
         boolean ageIsGreaterThanAHundred = age >100;
 
@@ -16,6 +18,6 @@ public class Age {
         if (ageIsGreaterThanAHundred)
             throw new AgeException("La edad no puede superar los 100 años.");
 
-        return new Age(age);
+        return new Age(number);
     }
 }

@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4aa3c8b6-6ca2-4098-b8be-185d45a4e246" name="Changes" comment="🟢Age should_throw_a_exception_when_the_number_greater_than_a_hundred()">
+    <list default="true" id="4aa3c8b6-6ca2-4098-b8be-185d45a4e246" name="Changes" comment="🟢All Dni, Name, Age and Email created and testing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DataBase/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DataBase/Repository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Age.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Age.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Email.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Email.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Name.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Name.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/UI/SecondWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/UI/SecondWindowController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/UI/secondWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/UI/secondWindow.fxml" afterDir="false" />
@@ -45,17 +44,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="Domain" />
@@ -74,7 +73,7 @@
       <recent name="Domain" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.HelloApplication">
+  <component name="RunManager" selected="JUnit.AgeTest">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.UI.HelloApplication" />
       <module name="MySqlFx" />
@@ -150,8 +149,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.HelloApplication" />
         <item itemvalue="JUnit.AgeTest" />
+        <item itemvalue="Application.HelloApplication" />
         <item itemvalue="JUnit.DniTest" />
         <item itemvalue="JUnit.NameTest" />
         <item itemvalue="JUnit.EmailTest" />
@@ -328,7 +327,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687295249226</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="🟢All Dni, Name, Age and Email created and testing">
+      <created>1687296939797</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1687296939797</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -351,6 +357,7 @@
     <MESSAGE value="Age should_throw_a_exception_when_the_number_less_than_zero()" />
     <MESSAGE value="Age should_throw_a_exception_when_the_number_greater_than_a_hundred()" />
     <MESSAGE value="Age should_throw_a_exception_when_the_number_greater_than_a_hundred()" />
-    <option name="LAST_COMMIT_MESSAGE" value="Age should_throw_a_exception_when_the_number_greater_than_a_hundred()" />
+    <MESSAGE value="All Dni, Name, Age and Email created and testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="All Dni, Name, Age and Email created and testing" />
   </component>
 </project>

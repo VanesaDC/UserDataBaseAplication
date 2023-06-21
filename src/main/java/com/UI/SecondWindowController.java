@@ -14,23 +14,22 @@ public class SecondWindowController {
     private TextField edtDni, edtName, edtAge,edtEmail;
 
 
+    //Crear usuario con los datos de los campos. Validando datos
     public void saveUser()  {
         try {
             Dni.createDni(edtDni.getText());
             Name.createName(edtName.getText());
-            Age.createAge(Integer.parseInt(edtAge.getText()));// 🐸 Cuando escribe letras se para la aplicación
+            Age.createAge(edtAge.getText());// 🐸 Cuando escribe letras se para la aplicación
             Email.createEmail(edtEmail.getText());
 
         } catch (EmailException | DniException | AgeException | NameException e) {
             AlertPanel.showAttentionMessageSaying(e.getMessage());
         }
 
-        //Crear usuario con los datos de los campos. Validando datos
+
 
     }
     public void selectUser(){
-
-
         //busca usuario en base de datos con dni para y muestra los datos en los campos
     }
     public void udDateUser(){
