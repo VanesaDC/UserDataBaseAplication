@@ -17,12 +17,12 @@ class AgeTest {
         String message = assertThrows(AgeException.class, ()->Age.createAge(age)).getMessage();
         assertEquals("La edad no puede superar los 100 años.", message);
     }
-//    @Test
-//    void should_throw_a_exception_when_it_contains_letters() {
-//        String age = "edad";
-//        String message = assertThrows(AgeException.class, ()->Age.createAge(age)).getMessage();
-//        assertEquals("La edad no puede superar los 100 años.", message);
-//    }
+    @Test
+    void should_throw_a_exception_when_it_contains_letters() {
+        String age = "edad";
+        String message = assertThrows(AgeException.class, ()->Age.createAge(age)).getMessage();
+        assertEquals("Escriba la edad con números, por favor.", message);
+    }
 
 
 }
