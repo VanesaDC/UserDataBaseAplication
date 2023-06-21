@@ -2,7 +2,6 @@ package DataBase;
 
 import Domain.*;
 import com.UI.AlertPanel;
-import javafx.scene.control.Alert;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -43,7 +42,7 @@ public class MySqlRepository implements MySqlUserRepository {
     @Override
     public List<User> getUserByDni(User userSolicited) {
         String query = "SELECT * FROM alumnos WHERE dni= '" + userSolicited.getDni().getDni()+"'";
-        Connection connection = null;
+        Connection connection;
         List<User> users = new ArrayList<>();
             try {
                 connection= Connector.getConnection();
