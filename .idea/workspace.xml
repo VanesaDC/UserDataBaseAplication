@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4aa3c8b6-6ca2-4098-b8be-185d45a4e246" name="Changes" comment="🟢All Dni, Name, Age and Email created and testing">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DataBase/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DataBase/Repository.java" afterDir="false" />
+    <list default="true" id="4aa3c8b6-6ca2-4098-b8be-185d45a4e246" name="Changes" comment="🔴Age should_throw_a_exception_when_it_contains_letters()">
       <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Age.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Age.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/UI/SecondWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/UI/SecondWindowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/UI/secondWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/UI/secondWindow.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Domain/AgeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Domain/AgeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -334,7 +328,21 @@
       <option name="project" value="LOCAL" />
       <updated>1687296939797</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="🔵Age receives now a String instead of int">
+      <created>1687341067768</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1687341067768</updated>
+    </task>
+    <task id="LOCAL-00026" summary="🔴Age should_throw_a_exception_when_it_contains_letters()">
+      <created>1687341132910</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1687341132910</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -358,6 +366,8 @@
     <MESSAGE value="Age should_throw_a_exception_when_the_number_greater_than_a_hundred()" />
     <MESSAGE value="Age should_throw_a_exception_when_the_number_greater_than_a_hundred()" />
     <MESSAGE value="All Dni, Name, Age and Email created and testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="All Dni, Name, Age and Email created and testing" />
+    <MESSAGE value="Age receives now a String instead of int" />
+    <MESSAGE value="Age should_throw_a_exception_when_it_contains_letters()" />
+    <option name="LAST_COMMIT_MESSAGE" value="Age should_throw_a_exception_when_it_contains_letters()" />
   </component>
 </project>
