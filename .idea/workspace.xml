@@ -4,18 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4aa3c8b6-6ca2-4098-b8be-185d45a4e246" name="Changes" comment="🟢Age should_throw_a_exception_when_it_contains_letters()">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Aplication/UserSingUp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DataBase/MySqlRepositoryException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Aplication/UserSingUpTest.java" afterDir="false" />
+    <list default="true" id="4aa3c8b6-6ca2-4098-b8be-185d45a4e246" name="Changes" comment="🟢UserSingUp throws_exception_when_user_is_already_registered()">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DataBase/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DataBase/MySqlRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DataBase/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DataBase/MySqlUserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Age.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Age.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Dni.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Dni.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/UI/SecondWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/UI/SecondWindowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Aplication/UserSingUpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Aplication/UserSingUpTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +69,7 @@
       <recent name="Domain" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserSingUpTest.throws_exception_when_user_is_already_registered">
+  <component name="RunManager" selected="JUnit.UserSingUpTest">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.UI.HelloApplication" />
       <module name="MySqlFx" />
@@ -122,16 +113,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserSingUpTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MySqlFx" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Domain.*" />
+          <option name="PATTERN" value="Aplication.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Domain" />
-      <option name="MAIN_CLASS_NAME" value="Domain.NameTest" />
+      <option name="PACKAGE_NAME" value="Aplication" />
+      <option name="MAIN_CLASS_NAME" value="Aplication.UserSingUpTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -155,11 +146,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserSingUpTest" />
         <item itemvalue="JUnit.UserSingUpTest.throws_exception_when_user_is_already_registered" />
         <item itemvalue="Application.HelloApplication" />
         <item itemvalue="JUnit.AgeTest" />
         <item itemvalue="JUnit.DniTest" />
-        <item itemvalue="JUnit.NameTest" />
       </list>
     </recent_temporary>
   </component>
@@ -361,7 +352,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687341756109</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="🟢UserSingUp throws_exception_when_user_is_already_registered()">
+      <created>1687346004540</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1687346004540</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -388,6 +386,7 @@
     <MESSAGE value="Age receives now a String instead of int" />
     <MESSAGE value="Age should_throw_a_exception_when_it_contains_letters()" />
     <MESSAGE value="Age should_throw_a_exception_when_it_contains_letters()" />
-    <option name="LAST_COMMIT_MESSAGE" value="Age should_throw_a_exception_when_it_contains_letters()" />
+    <MESSAGE value="UserSingUp throws_exception_when_user_is_already_registered()" />
+    <option name="LAST_COMMIT_MESSAGE" value="UserSingUp throws_exception_when_user_is_already_registered()" />
   </component>
 </project>

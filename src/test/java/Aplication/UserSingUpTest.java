@@ -19,7 +19,7 @@ class UserSingUpTest {
     Email email;
 
     @Test
-    void throws_exception_when_user_is_already_registered() throws DniException, NameException, AgeException, EmailException, MySqlRepositoryException {
+    void should_throws_exception_when_user_is_already_registered() throws DniException, NameException, AgeException, EmailException, MySqlRepositoryException {
         dni = Dni.createDni("78698408K");
         name = Name.createName("Juliana");
         age = Age.createAge("34");
@@ -28,7 +28,18 @@ class UserSingUpTest {
         when(mockMySqlRepository.getUserByDni(user)).thenReturn(List.of(user));
         String message = assertThrows(MySqlRepositoryException.class, ()->singUp.saveUser(user)).getMessage();
         assertEquals("El usuario indicado ya está registrado en la base de datos.", message);
+    }
 
+    @Test
+    void should_save_user_when_it_not_is_registered() throws DniException, NameException, AgeException, EmailException, MySqlRepositoryException {
+        dni = Dni.createDni("78698408K");
+        name = Name.createName("Juliana");
+        age = Age.createAge("34");
+        email = Email.createEmail("email@gmail.com");
+        User user = new User(dni, name, age, email);
+        when(mockMySqlRepository.getUserByDni(user)).thenReturn(List.of());
+        singUp.saveUser(user);
+        verify(mockMySqlRepository).saveUser(user);
     }
 
 }
