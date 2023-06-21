@@ -8,7 +8,7 @@ interface MySqlUserRepository {
     void saveUser (User user);
     void upDateUser (User user);
     void deleteUser (User user);
-    List<User> getUserByDni(User user);
+    List<User> getUserByDni(String dniSelected);
     List<User> getAllUser();
 
 

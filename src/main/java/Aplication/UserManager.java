@@ -7,15 +7,15 @@ import Domain.User;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UserSingUp {
+public class UserManager {
     MySqlRepository mySqlRepository;
 
-    public UserSingUp(MySqlRepository mySqlRepository) {
+    public UserManager(MySqlRepository mySqlRepository) {
         this.mySqlRepository = mySqlRepository;
     }
     public void saveUser (User user) throws MySqlRepositoryException {
         List<User> users = new ArrayList<>();
-        users = mySqlRepository.getUserByDni(user);
+        users = mySqlRepository.getUserByDni(user.getDni().getDni());
         if (users.isEmpty()){
             mySqlRepository.saveUser(user);
         }else{
@@ -23,4 +23,14 @@ public class UserSingUp {
         }
 
     }
+
+    public User getUserByDni(String dni) throws MySqlRepositoryException {
+        List<User> users = new ArrayList<>();
+        users = mySqlRepository.getUserByDni(dni);
+        if (users.isEmpty()){
+            throw new MySqlRepositoryException("El DNI indicado no está registrado en la base de datos.");
+        }
+        return users.get(0);
+    }
+
 }

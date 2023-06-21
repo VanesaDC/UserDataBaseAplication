@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4aa3c8b6-6ca2-4098-b8be-185d45a4e246" name="Changes" comment="🚀 MySqlRepository class = saveUser and getUserByDni created">
+    <list default="true" id="4aa3c8b6-6ca2-4098-b8be-185d45a4e246" name="Changes" comment="🔵name Name test changed">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Aplication/UserSelector.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Aplication/UserSingUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Aplication/UserManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/DataBase/MySqlRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DataBase/MySqlRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Domain/AgeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Domain/AgeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Domain/NameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Domain/NameTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DataBase/MySqlUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DataBase/MySqlUserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/UI/SecondWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/UI/SecondWindowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Aplication/UserSingUpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Aplication/UserManagerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +74,7 @@
       <recent name="Domain" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.NameTest">
+  <component name="RunManager" selected="JUnit.UserManagerTest.should_throws_exception_when_user_is_already_registered">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.UI.HelloApplication" />
       <module name="MySqlFx" />
@@ -80,21 +84,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AgeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MySqlFx" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Domain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Domain" />
-      <option name="MAIN_CLASS_NAME" value="Domain.AgeTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -114,7 +103,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserSingUpTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MySqlFx" />
       <extension name="coverage">
         <pattern>
@@ -123,13 +112,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Aplication" />
-      <option name="MAIN_CLASS_NAME" value="Aplication.UserSingUpTest" />
+      <option name="MAIN_CLASS_NAME" value="Aplication.UserManagerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserSingUpTest.throws_exception_when_user_is_already_registered" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserManagerTest.getUserByDni_should_throw_a_exception_when_the_dni_is_not_registered" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MySqlFx" />
       <extension name="coverage">
         <pattern>
@@ -138,8 +127,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Aplication" />
-      <option name="MAIN_CLASS_NAME" value="Aplication.UserSingUpTest" />
-      <option name="METHOD_NAME" value="throws_exception_when_user_is_already_registered" />
+      <option name="MAIN_CLASS_NAME" value="Aplication.UserManagerTest" />
+      <option name="METHOD_NAME" value="getUserByDni_should_throw_a_exception_when_the_dni_is_not_registered" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserManagerTest.should_throws_exception_when_user_is_already_registered" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MySqlFx" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Aplication.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Aplication" />
+      <option name="MAIN_CLASS_NAME" value="Aplication.UserManagerTest" />
+      <option name="METHOD_NAME" value="should_throws_exception_when_user_is_already_registered" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -147,11 +152,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserManagerTest.should_throws_exception_when_user_is_already_registered" />
+        <item itemvalue="JUnit.UserManagerTest.getUserByDni_should_throw_a_exception_when_the_dni_is_not_registered" />
+        <item itemvalue="JUnit.UserManagerTest" />
         <item itemvalue="JUnit.NameTest" />
         <item itemvalue="Application.HelloApplication" />
-        <item itemvalue="JUnit.UserSingUpTest" />
-        <item itemvalue="JUnit.UserSingUpTest.throws_exception_when_user_is_already_registered" />
-        <item itemvalue="JUnit.AgeTest" />
       </list>
     </recent_temporary>
   </component>
@@ -374,11 +379,24 @@
       <option name="project" value="LOCAL" />
       <updated>1687351936422</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="🔵name Name test changed">
+      <created>1687352260064</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1687352260064</updated>
+    </task>
+    <task id="LOCAL-00032" summary="🔵name Name test changed">
+      <created>1687352263798</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1687352263798</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="a warning about module-info.java was solved" />
     <MESSAGE value="User class created&#10;Repository interface created" />
     <MESSAGE value="Repository class created" />
     <MESSAGE value="change in principal form scene" />
@@ -403,6 +421,7 @@
     <MESSAGE value="UserSingUp throws_exception_when_user_is_already_registered()" />
     <MESSAGE value="UserSingUp should_save_user_when_it_not_is_registered()" />
     <MESSAGE value=" MySqlRepository class = saveUser and getUserByDni created" />
-    <option name="LAST_COMMIT_MESSAGE" value=" MySqlRepository class = saveUser and getUserByDni created" />
+    <MESSAGE value="name Name test changed" />
+    <option name="LAST_COMMIT_MESSAGE" value="name Name test changed" />
   </component>
 </project>

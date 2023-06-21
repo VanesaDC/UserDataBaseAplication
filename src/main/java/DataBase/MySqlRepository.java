@@ -40,8 +40,8 @@ public class MySqlRepository implements MySqlUserRepository {
     }
 
     @Override
-    public List<User> getUserByDni(User userSolicited) {
-        String query = "SELECT * FROM alumnos WHERE dni= '" + userSolicited.getDni().getDni()+"'";
+    public List<User> getUserByDni(String dniSelected) {
+        String query = "SELECT * FROM alumnos WHERE dni= '" + dniSelected+ "'";
         Connection connection;
         List<User> users = new ArrayList<>();
             try {

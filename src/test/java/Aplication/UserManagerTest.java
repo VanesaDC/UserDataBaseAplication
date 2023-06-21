@@ -10,9 +10,9 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
-class UserSingUpTest {
+class UserManagerTest {
     MySqlRepository mockMySqlRepository = mock(MySqlRepository.class);
-    UserSingUp singUp = new UserSingUp(mockMySqlRepository);
+    UserManager userManager = new UserManager(mockMySqlRepository);
     Dni dni;
     Name name;
     Age age;
@@ -25,8 +25,8 @@ class UserSingUpTest {
         age = Age.createAge("34");
         email = Email.createEmail("email@gmail.com");
         User user = new User(dni, name, age, email);
-        when(mockMySqlRepository.getUserByDni(user)).thenReturn(List.of(user));
-        String message = assertThrows(MySqlRepositoryException.class, ()->singUp.saveUser(user)).getMessage();
+        when(mockMySqlRepository.getUserByDni(dni.getDni())).thenReturn(List.of(user));
+        String message = assertThrows(MySqlRepositoryException.class, ()-> userManager.saveUser(user)).getMessage();
         assertEquals("El usuario indicado ya está registrado en la base de datos.", message);
     }
 
@@ -37,9 +37,17 @@ class UserSingUpTest {
         age = Age.createAge("34");
         email = Email.createEmail("email@gmail.com");
         User user = new User(dni, name, age, email);
-        when(mockMySqlRepository.getUserByDni(user)).thenReturn(List.of());
-        singUp.saveUser(user);
+        when(mockMySqlRepository.getUserByDni(dni.getDni())).thenReturn(List.of());
+        userManager.saveUser(user);
         verify(mockMySqlRepository).saveUser(user);
+    }
+    @Test
+    void getUserByDni_should_throw_a_exception_when_the_dni_is_not_registered() throws MySqlRepositoryException {
+        String dni = "51528773X";
+        when(mockMySqlRepository.getUserByDni(dni)).thenReturn(List.of());
+        String message = assertThrows(MySqlRepositoryException.class, ()-> userManager.getUserByDni(dni)).getMessage();
+        assertEquals("El DNI indicado no está registrado en la base de datos.", message);
+
     }
 
 }

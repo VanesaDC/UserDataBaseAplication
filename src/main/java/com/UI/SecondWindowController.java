@@ -1,6 +1,6 @@
 package com.UI;
 
-import Aplication.UserSingUp;
+import Aplication.UserManager;
 import DataBase.MySqlRepository;
 import DataBase.MySqlRepositoryException;
 import Domain.*;
@@ -15,9 +15,11 @@ public class SecondWindowController {
     private Button btnSave, btnUpDate, btnDelete, btnSelect, btnCancel;
     @FXML
     private TextField edtDni, edtName, edtAge,edtEmail;
+    MySqlRepository mySqlRepository = new MySqlRepository();
+    UserManager userManager = new UserManager(mySqlRepository);
 
 
-    //Crear usuario con los datos de los campos. Validando datos
+
     public void saveUser()  {
         try {
             Dni dni= Dni.createDni(edtDni.getText());
@@ -25,9 +27,7 @@ public class SecondWindowController {
             Age age= Age.createAge(edtAge.getText());
             Email email= Email.createEmail(edtEmail.getText());
             User user = new User(dni, name, age,email);
-            MySqlRepository mySqlRepository = new MySqlRepository();
-            UserSingUp userSingUp = new UserSingUp(mySqlRepository);
-            userSingUp.saveUser(user);
+            userManager.saveUser(user);
             cleanText();
         } catch (EmailException | DniException | AgeException | NameException | MySqlRepositoryException e) {
             AlertPanel.showAttentionMessageSaying(e.getMessage());
@@ -42,7 +42,11 @@ public class SecondWindowController {
     }
 
     public void selectUser(){
-        //busca usuario en base de datos con dni para y muestra los datos en los campos
+        try {
+            User user = userManager.getUserByDni(edtDni.getText());
+        } catch (MySqlRepositoryException e) {
+            throw new RuntimeException(e);
+        }
     }
     public void udDateUser(){
         //Crea un usuario con los nuevos datos y lo actualiza en la bd con el id seleccionado (Lo crea para validar los campos)
