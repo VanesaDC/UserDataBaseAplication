@@ -3,8 +3,6 @@ package Aplication;
 import DataBase.MySqlRepository;
 import DataBase.MySqlRepositoryException;
 import Domain.User;
-
-import java.util.ArrayList;
 import java.util.List;
 
 public class UserManager {
@@ -14,8 +12,7 @@ public class UserManager {
         this.mySqlRepository = mySqlRepository;
     }
     public void saveUser (User user) throws MySqlRepositoryException {
-        List<User> users = new ArrayList<>();
-        users = mySqlRepository.getUserByDni(user.getDni().getString());
+        List<User> users = mySqlRepository.getUserByDni(user.getDni().getString());
         if (users.isEmpty()){
             mySqlRepository.saveUser(user);
         }else{
@@ -33,8 +30,15 @@ public class UserManager {
         return users.get(0);
     }
 
+    //🐸 Test exception
     public void upDateUser(User userSolicited) throws MySqlRepositoryException{
-        User user = getUserByDni(userSolicited.getDni().getString());
+        getUserByDni(userSolicited.getDni().getString());
         mySqlRepository.upDateUser(userSolicited);
+    }
+
+    //🐸 Test exception
+    public void deleteUser(String dni) throws MySqlRepositoryException {
+        User user = getUserByDni(dni);
+        mySqlRepository.deleteUser(user);
     }
 }

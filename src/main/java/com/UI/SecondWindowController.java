@@ -17,7 +17,7 @@ public class SecondWindowController {
     private TextField edtDni, edtName, edtAge,edtEmail;
     MySqlRepository mySqlRepository = new MySqlRepository();
     UserManager userManager = new UserManager(mySqlRepository);
-    User user;
+
 
 
     private void cleanText() {
@@ -26,45 +26,55 @@ public class SecondWindowController {
         edtAge.setText("");
         edtEmail.setText("");
     }
-
-    public void saveUser()  {
+    private User createUser() {
+        User user = null;
         try {
-            Dni dni= Dni.createDni(edtDni.getText());
+            Dni dni = Dni.createDni(edtDni.getText());
             Name name =Name.createName(edtName.getText());
             Age age= Age.createAge(edtAge.getText());
             Email email= Email.createEmail(edtEmail.getText());
             user = new User(dni, name, age,email);
+        } catch (EmailException | DniException | AgeException | NameException  e) {
+            AlertPanel.showAttentionMessageSaying(e.getMessage());
+        }
+        return user;
+    }
+    public void saveUser()  {
+        try {
+            User user = createUser();
             userManager.saveUser(user);
             cleanText();
-        } catch (EmailException | DniException | AgeException | NameException | MySqlRepositoryException e) {
+        } catch (MySqlRepositoryException e) {
             AlertPanel.showAttentionMessageSaying(e.getMessage());
         }
     }
-
     public void selectUser(){
         try {
-            user = userManager.getUserByDni(edtDni.getText());
+            User user = userManager.getUserByDni(edtDni.getText());
             edtName.setText(user.getName().getString());
             edtAge.setText(user.getAge().getString());
             edtEmail.setText(user.getEmail().getString());
         } catch (MySqlRepositoryException e) {
             AlertPanel.showAttentionMessageSaying(e.getMessage());
         }
-
     }
     public void udDateUser(){
         try {
-            user.setName(Name.createName(edtName.getText()));
-            user.setAge(Age.createAge(edtAge.getText()));
-            user.setEmail(Email.createEmail(edtEmail.getText()));
+            User user = createUser();
             userManager.upDateUser(user);
-        } catch ( MySqlRepositoryException | EmailException| AgeException | NameException e) {
+            cleanText();
+
+        } catch ( MySqlRepositoryException e) {
             AlertPanel.showAttentionMessageSaying(e.getMessage());
         }
     }
     public void deleteUser(){
-        btnDelete.setTooltip(new Tooltip("Debe buscar el usuario primero"));
-        //Lama al método delete de la base de datos con el dni
+        try {
+            userManager.deleteUser(edtDni.getText());
+        } catch (MySqlRepositoryException e) {
+            AlertPanel.showAttentionMessageSaying(e.getMessage());
+        }
+        cleanText();
     }
 
     public void closeSecondWindow(){
@@ -83,5 +93,4 @@ public class SecondWindowController {
     public void showInstructionsUpDate(){
         btnUpDate.setTooltip(new Tooltip("Haga clic después de modificar todos los campos que desee cambiar"));
     }
-
 }

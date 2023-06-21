@@ -19,7 +19,6 @@ public class Connector {
                             properties.getProperty("dataBaseName"),
                             properties.getProperty("userName"),
                             properties.getProperty("password"));
-            System.out.println("Connected");
         } catch (Exception e) {
             AlertPanel.showAttentionMessageSaying("No se pudo establecer conexión con la base de datos");
         }

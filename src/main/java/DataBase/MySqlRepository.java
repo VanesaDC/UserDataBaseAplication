@@ -24,18 +24,15 @@ public class MySqlRepository implements MySqlUserRepository {
                 AlertPanel.showInformationMessageSaying("El usuario se guardó correctamente.");
             }
             connection.close();
-            System.out.println("Disconnected");
         } catch (SQLException e) {
             AlertPanel.showAttentionMessageSaying("Ocurrió un fallo al grabar el usuario en la base de datos."+ e);
         }
-
     }
 
     @Override
     public void upDateUser(User user) {
         String query = "UPDATE alumnos SET name=?, age=?, email=? WHERE dni= '"+user.getDni().getString()+"'";
         Connection connection = Connector.getConnection();
-        System.out.println(user.toString());
         try {
             PreparedStatement statement = connection.prepareStatement(query);
             statement.setString(1, user.getName().getString());
@@ -50,11 +47,25 @@ public class MySqlRepository implements MySqlUserRepository {
         } catch (SQLException e) {
             AlertPanel.showAttentionMessageSaying("Sucedió un error al tratar de cambiar los datos en la base de datos"+e);
         }
-
     }
 
     @Override
     public void deleteUser(User user) {
+        String query = "DELETE FROM alumnos WHERE dni=?";
+        Connection connection = Connector.getConnection();
+        try {
+            PreparedStatement statement = connection.prepareStatement(query);
+            statement.setString(1, user.getDni().getString());
+            int rowsDeleted = statement.executeUpdate();
+            if (rowsDeleted > 0) {
+                AlertPanel.showInformationMessageSaying("El usuario se eliminó con exito");
+            }
+            connection.close();
+        } catch (SQLException e) {
+            AlertPanel.showAttentionMessageSaying("Algo raro pasó al tratar de eliminar al usuario");
+        }
+
+
     }
 
     @Override
@@ -75,7 +86,6 @@ public class MySqlRepository implements MySqlUserRepository {
                     users.add(user);
                 }
                 connection.close();
-                System.out.println("Disconnected");
             } catch (SQLException | DniException | NameException | AgeException | EmailException e) {
                 AlertPanel.showAttentionMessageSaying("Sucededió un error al buscar el usuario en la base de datos." + e);
             }
