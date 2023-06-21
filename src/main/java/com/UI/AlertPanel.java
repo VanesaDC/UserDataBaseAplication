@@ -10,4 +10,11 @@ public class AlertPanel {
         alert.setContentText(message);
         alert.showAndWait();
     }
+    public static void showInformationMessageSaying(String message) {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setHeaderText(null);
+        alert.setTitle("Ok");
+        alert.setContentText(message);
+        alert.showAndWait();
+    }
 }

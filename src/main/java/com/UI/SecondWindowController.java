@@ -19,7 +19,6 @@ public class SecondWindowController {
 
     //Crear usuario con los datos de los campos. Validando datos
     public void saveUser()  {
-
         try {
             Dni dni= Dni.createDni(edtDni.getText());
             Name name =Name.createName(edtName.getText());
@@ -29,12 +28,19 @@ public class SecondWindowController {
             MySqlRepository mySqlRepository = new MySqlRepository();
             UserSingUp userSingUp = new UserSingUp(mySqlRepository);
             userSingUp.saveUser(user);
+            cleanText();
         } catch (EmailException | DniException | AgeException | NameException | MySqlRepositoryException e) {
             AlertPanel.showAttentionMessageSaying(e.getMessage());
         }
-
-
     }
+
+    private void cleanText() {
+        edtDni.setText("");
+        edtName.setText("");
+        edtAge.setText("");
+        edtEmail.setText("");
+    }
+
     public void selectUser(){
         //busca usuario en base de datos con dni para y muestra los datos en los campos
     }
