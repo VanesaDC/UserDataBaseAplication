@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4aa3c8b6-6ca2-4098-b8be-185d45a4e246" name="Changes" comment="🟢UserSingUp should_save_user_when_it_not_is_registered()">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Aplication/UserSelector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataConnection.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ConnectionData.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DataBase/Connector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DataBase/Connector.java" afterDir="false" />
+    <list default="true" id="4aa3c8b6-6ca2-4098-b8be-185d45a4e246" name="Changes" comment="🚀 MySqlRepository class = saveUser and getUserByDni created">
       <change beforePath="$PROJECT_DIR$/src/main/java/DataBase/MySqlRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DataBase/MySqlRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/UI/AlertPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/UI/AlertPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/UI/SecondWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/UI/SecondWindowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Domain/AgeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Domain/AgeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Domain/NameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Domain/NameTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +70,7 @@
       <recent name="Domain" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.HelloApplication">
+  <component name="RunManager" selected="JUnit.NameTest">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.UI.HelloApplication" />
       <module name="MySqlFx" />
@@ -103,7 +99,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DniTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MySqlFx" />
       <extension name="coverage">
         <pattern>
@@ -112,7 +108,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Domain" />
-      <option name="MAIN_CLASS_NAME" value="Domain.DniTest" />
+      <option name="MAIN_CLASS_NAME" value="Domain.NameTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -151,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.NameTest" />
         <item itemvalue="Application.HelloApplication" />
         <item itemvalue="JUnit.UserSingUpTest" />
         <item itemvalue="JUnit.UserSingUpTest.throws_exception_when_user_is_already_registered" />
         <item itemvalue="JUnit.AgeTest" />
-        <item itemvalue="JUnit.DniTest" />
       </list>
     </recent_temporary>
   </component>
@@ -371,11 +367,17 @@
       <option name="project" value="LOCAL" />
       <updated>1687346304233</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="🚀 MySqlRepository class = saveUser and getUserByDni created">
+      <created>1687351936422</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1687351936422</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="init commit. &#10;Connection is ok&#10;Properties was created" />
     <MESSAGE value="a warning about module-info.java was solved" />
     <MESSAGE value="User class created&#10;Repository interface created" />
     <MESSAGE value="Repository class created" />
@@ -400,6 +402,7 @@
     <MESSAGE value="Age should_throw_a_exception_when_it_contains_letters()" />
     <MESSAGE value="UserSingUp throws_exception_when_user_is_already_registered()" />
     <MESSAGE value="UserSingUp should_save_user_when_it_not_is_registered()" />
-    <option name="LAST_COMMIT_MESSAGE" value="UserSingUp should_save_user_when_it_not_is_registered()" />
+    <MESSAGE value=" MySqlRepository class = saveUser and getUserByDni created" />
+    <option name="LAST_COMMIT_MESSAGE" value=" MySqlRepository class = saveUser and getUserByDni created" />
   </component>
 </project>
