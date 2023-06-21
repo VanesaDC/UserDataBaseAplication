@@ -11,7 +11,7 @@ public class Dni {
         this.dni = dni;
     }
 
-    public String getDni() {
+    public String getString() {
         return dni;
     }
 

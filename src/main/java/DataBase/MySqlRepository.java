@@ -14,10 +14,10 @@ public class MySqlRepository implements MySqlUserRepository {
         Connection connection = Connector.getConnection();
         try {
             PreparedStatement statement = connection.prepareStatement(query);
-            statement.setString(1, user.getDni().getDni());
-            statement.setString(2, user.getName().getName());
-            statement.setString(3, user.getAge().getAge());
-            statement.setString(4, user.getEmail().getEmail());
+            statement.setString(1, user.getDni().getString());
+            statement.setString(2, user.getName().getString());
+            statement.setString(3, user.getAge().getString());
+            statement.setString(4, user.getEmail().getString());
 
             int rowsInserted = statement.executeUpdate();
             if (rowsInserted > 0) {
@@ -33,6 +33,24 @@ public class MySqlRepository implements MySqlUserRepository {
 
     @Override
     public void upDateUser(User user) {
+        String query = "UPDATE alumnos SET name=?, age=?, email=? WHERE dni= '"+user.getDni().getString()+"'";
+        Connection connection = Connector.getConnection();
+        System.out.println(user.toString());
+        try {
+            PreparedStatement statement = connection.prepareStatement(query);
+            statement.setString(1, user.getName().getString());
+            statement.setString(2, user.getAge().getString());
+            statement.setString(3, user.getEmail().getString());
+
+            int rowsUpdated = statement.executeUpdate();
+            if (rowsUpdated > 0) {
+                AlertPanel.showInformationMessageSaying("El usuario se actualizó con éxito");
+            }
+            connection.close();
+        } catch (SQLException e) {
+            AlertPanel.showAttentionMessageSaying("Sucedió un error al tratar de cambiar los datos en la base de datos"+e);
+        }
+
     }
 
     @Override

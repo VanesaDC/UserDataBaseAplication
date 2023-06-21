@@ -9,7 +9,7 @@ public class Age {
         this.age = age;
     }
 
-    public String getAge() {
+    public String getString() {
         return age;
     }
 

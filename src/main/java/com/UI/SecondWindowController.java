@@ -17,22 +17,8 @@ public class SecondWindowController {
     private TextField edtDni, edtName, edtAge,edtEmail;
     MySqlRepository mySqlRepository = new MySqlRepository();
     UserManager userManager = new UserManager(mySqlRepository);
+    User user;
 
-
-
-    public void saveUser()  {
-        try {
-            Dni dni= Dni.createDni(edtDni.getText());
-            Name name =Name.createName(edtName.getText());
-            Age age= Age.createAge(edtAge.getText());
-            Email email= Email.createEmail(edtEmail.getText());
-            User user = new User(dni, name, age,email);
-            userManager.saveUser(user);
-            cleanText();
-        } catch (EmailException | DniException | AgeException | NameException | MySqlRepositoryException e) {
-            AlertPanel.showAttentionMessageSaying(e.getMessage());
-        }
-    }
 
     private void cleanText() {
         edtDni.setText("");
@@ -41,15 +27,40 @@ public class SecondWindowController {
         edtEmail.setText("");
     }
 
-    public void selectUser(){
+    public void saveUser()  {
         try {
-            User user = userManager.getUserByDni(edtDni.getText());
-        } catch (MySqlRepositoryException e) {
-            throw new RuntimeException(e);
+            Dni dni= Dni.createDni(edtDni.getText());
+            Name name =Name.createName(edtName.getText());
+            Age age= Age.createAge(edtAge.getText());
+            Email email= Email.createEmail(edtEmail.getText());
+            user = new User(dni, name, age,email);
+            userManager.saveUser(user);
+            cleanText();
+        } catch (EmailException | DniException | AgeException | NameException | MySqlRepositoryException e) {
+            AlertPanel.showAttentionMessageSaying(e.getMessage());
         }
     }
+
+    public void selectUser(){
+        try {
+            user = userManager.getUserByDni(edtDni.getText());
+            edtName.setText(user.getName().getString());
+            edtAge.setText(user.getAge().getString());
+            edtEmail.setText(user.getEmail().getString());
+        } catch (MySqlRepositoryException e) {
+            AlertPanel.showAttentionMessageSaying(e.getMessage());
+        }
+
+    }
     public void udDateUser(){
-        //Crea un usuario con los nuevos datos y lo actualiza en la bd con el id seleccionado (Lo crea para validar los campos)
+        try {
+            user.setName(Name.createName(edtName.getText()));
+            user.setAge(Age.createAge(edtAge.getText()));
+            user.setEmail(Email.createEmail(edtEmail.getText()));
+            userManager.upDateUser(user);
+        } catch ( MySqlRepositoryException | EmailException| AgeException | NameException e) {
+            AlertPanel.showAttentionMessageSaying(e.getMessage());
+        }
     }
     public void deleteUser(){
         btnDelete.setTooltip(new Tooltip("Debe buscar el usuario primero"));

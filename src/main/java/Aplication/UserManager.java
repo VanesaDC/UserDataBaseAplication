@@ -15,7 +15,7 @@ public class UserManager {
     }
     public void saveUser (User user) throws MySqlRepositoryException {
         List<User> users = new ArrayList<>();
-        users = mySqlRepository.getUserByDni(user.getDni().getDni());
+        users = mySqlRepository.getUserByDni(user.getDni().getString());
         if (users.isEmpty()){
             mySqlRepository.saveUser(user);
         }else{
@@ -25,7 +25,7 @@ public class UserManager {
     }
 
     public User getUserByDni(String dni) throws MySqlRepositoryException {
-        List<User> users = new ArrayList<>();
+        List<User> users;
         users = mySqlRepository.getUserByDni(dni);
         if (users.isEmpty()){
             throw new MySqlRepositoryException("El DNI indicado no está registrado en la base de datos.");
@@ -33,4 +33,8 @@ public class UserManager {
         return users.get(0);
     }
 
+    public void upDateUser(User userSolicited) throws MySqlRepositoryException{
+        User user = getUserByDni(userSolicited.getDni().getString());
+        mySqlRepository.upDateUser(userSolicited);
+    }
 }

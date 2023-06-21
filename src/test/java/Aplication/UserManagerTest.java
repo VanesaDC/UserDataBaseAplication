@@ -25,7 +25,7 @@ class UserManagerTest {
         age = Age.createAge("34");
         email = Email.createEmail("email@gmail.com");
         User user = new User(dni, name, age, email);
-        when(mockMySqlRepository.getUserByDni(dni.getDni())).thenReturn(List.of(user));
+        when(mockMySqlRepository.getUserByDni(dni.getString())).thenReturn(List.of(user));
         String message = assertThrows(MySqlRepositoryException.class, ()-> userManager.saveUser(user)).getMessage();
         assertEquals("El usuario indicado ya está registrado en la base de datos.", message);
     }
@@ -37,7 +37,7 @@ class UserManagerTest {
         age = Age.createAge("34");
         email = Email.createEmail("email@gmail.com");
         User user = new User(dni, name, age, email);
-        when(mockMySqlRepository.getUserByDni(dni.getDni())).thenReturn(List.of());
+        when(mockMySqlRepository.getUserByDni(dni.getString())).thenReturn(List.of());
         userManager.saveUser(user);
         verify(mockMySqlRepository).saveUser(user);
     }
@@ -47,7 +47,6 @@ class UserManagerTest {
         when(mockMySqlRepository.getUserByDni(dni)).thenReturn(List.of());
         String message = assertThrows(MySqlRepositoryException.class, ()-> userManager.getUserByDni(dni)).getMessage();
         assertEquals("El DNI indicado no está registrado en la base de datos.", message);
-
     }
 
 }

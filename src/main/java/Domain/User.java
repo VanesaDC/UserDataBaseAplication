@@ -3,7 +3,7 @@ package Domain;
 import java.util.Objects;
 
 public class User {
-    private Dni dni;
+    private final Dni dni;
     private Name name;
     private Age age;
     private Email email;
@@ -19,10 +19,10 @@ public class User {
     @Override
     public String toString() {
         return "User{" +
-                "dni=" + dni.getDni() +
-                ", name=" + name.getName() +
-                ", age=" + age.getAge() +
-                ", email=" + email.getEmail() +
+                "dni=" + dni.getString() +
+                ", name=" + name.getString() +
+                ", age=" + age.getString() +
+                ", email=" + email.getString() +
                 '}';
     }
 
@@ -40,6 +40,18 @@ public class User {
 
     public Email getEmail() {
         return email;
+    }
+
+    public void setName(Name name) {
+        this.name = name;
+    }
+
+    public void setAge(Age age) {
+        this.age = age;
+    }
+
+    public void setEmail(Email email) {
+        this.email = email;
     }
 
     @Override

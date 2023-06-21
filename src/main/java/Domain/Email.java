@@ -8,7 +8,7 @@ public class Email {
     private Email (String email){
         this.email = email;
     }
-    public String getEmail() {
+    public String getString() {
         return email;
     }
 
