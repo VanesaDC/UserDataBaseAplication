@@ -3,7 +3,7 @@ package Domain;
 import java.util.regex.Pattern;
 
 public class Age {
-    private String age;
+    private final String age;
 
     private Age(String age) {
         this.age = age;
