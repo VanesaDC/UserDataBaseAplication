@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4aa3c8b6-6ca2-4098-b8be-185d45a4e246" name="Changes" comment="deleted DniException, NameException, etc. Now exists an only class named DataException and is users by all attributes of user">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/UI/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/UI/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/UI/SecondWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/UI/SecondWindowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/UI/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/UI/hello-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/UI/secondWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/UI/secondWindow.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Domain/DniTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Domain/DniTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="4aa3c8b6-6ca2-4098-b8be-185d45a4e246" name="Changes" comment="🔵 black space deleted" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -427,11 +420,24 @@
       <option name="project" value="LOCAL" />
       <updated>1687422394972</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="🔵 black space deleted">
+      <created>1687424150981</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1687424150981</updated>
+    </task>
+    <task id="LOCAL-00039" summary="🔵 black space deleted">
+      <created>1687424256810</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1687424256810</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=" add image to secondWindow.fxml" />
     <MESSAGE value=" closeSecondWindow() method create" />
     <MESSAGE value=" ShowInstructions for every button. Show a text when mouse entered in button" />
     <MESSAGE value="Deleted throw error. Now show an alert message" />
@@ -456,6 +462,7 @@
     <MESSAGE value="deleteUser created" />
     <MESSAGE value="test for upDateUser and deleteUser" />
     <MESSAGE value="deleted DniException, NameException, etc. Now exists an only class named DataException and is users by all attributes of user" />
-    <option name="LAST_COMMIT_MESSAGE" value="deleted DniException, NameException, etc. Now exists an only class named DataException and is users by all attributes of user" />
+    <MESSAGE value=" black space deleted" />
+    <option name="LAST_COMMIT_MESSAGE" value=" black space deleted" />
   </component>
 </project>
