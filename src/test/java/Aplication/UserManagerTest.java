@@ -19,7 +19,7 @@ class UserManagerTest {
     Email email;
 
     @Test
-    void should_throws_exception_when_user_is_already_registered() throws  DataException, MySqlRepositoryException {
+    void should_throws_exception_when_user_is_already_registered() throws  DataException{
         dni = Dni.createDni("78698408K");
         name = Name.createName("Juliana");
         age = Age.createAge("34");
@@ -42,14 +42,14 @@ class UserManagerTest {
         verify(mockMySqlRepository).saveUser(user);
     }
     @Test
-    void getUserByDni_should_throw_a_exception_when_the_dni_is_not_registered() throws MySqlRepositoryException {
+    void getUserByDni_should_throw_a_exception_when_the_dni_is_not_registered() {
         String dni = "51528773X";
         when(mockMySqlRepository.getUserByDni(dni)).thenReturn(List.of());
         String message = assertThrows(MySqlRepositoryException.class, ()-> userManager.getUserByDni(dni)).getMessage();
         assertEquals("El DNI indicado no está registrado en la base de datos.", message);
     }
     @Test
-    void upDateUser_should_throw_a_exception_when_the_dni_is_not_registered() throws DataException,MySqlRepositoryException {
+    void upDateUser_should_throw_a_exception_when_the_dni_is_not_registered() throws DataException {
         dni = Dni.createDni("51528773X");
         name = Name.createName("Juliana");
         age = Age.createAge("34");
@@ -83,7 +83,7 @@ class UserManagerTest {
         verify(mockMySqlRepository).deleteUser(user);
     }
     @Test
-    void deleteUser_should_throws_esception_when_user_it_is_not_registered() throws DataException, MySqlRepositoryException {
+    void deleteUser_should_throws_esception_when_user_it_is_not_registered() throws DataException{
         dni = Dni.createDni("45456869Z");
         when(mockMySqlRepository.getUserByDni(dni.getString())).thenReturn(List.of());
         String message = assertThrows(MySqlRepositoryException.class, ()-> userManager.deleteUser(dni.getString())).getMessage();
