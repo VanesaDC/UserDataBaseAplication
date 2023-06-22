@@ -4,9 +4,7 @@ import DataBase.MySqlRepository;
 import DataBase.MySqlRepositoryException;
 import Domain.*;
 import org.junit.jupiter.api.Test;
-
 import java.util.List;
-
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 

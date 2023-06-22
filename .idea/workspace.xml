@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4aa3c8b6-6ca2-4098-b8be-185d45a4e246" name="Changes" comment="false exceptions eliminated in UserManager test">
+    <list default="true" id="4aa3c8b6-6ca2-4098-b8be-185d45a4e246" name="Changes" comment="some warnings eliminated">
       <change beforePath="$PROJECT_DIR$/src/test/java/Aplication/UserManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Aplication/UserManagerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -443,11 +443,24 @@
       <option name="project" value="LOCAL" />
       <updated>1687425001777</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="false exceptions eliminated in UserManager test">
+      <created>1687425108193</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1687425108193</updated>
+    </task>
+    <task id="LOCAL-00042" summary="some warnings eliminated">
+      <created>1687425262063</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1687425262063</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=" ShowInstructions for every button. Show a text when mouse entered in button" />
     <MESSAGE value="Deleted throw error. Now show an alert message" />
     <MESSAGE value=" should_throw_a_exception_when_email_is_not_correct()" />
     <MESSAGE value="should_decline_empty_name()&#10;should_accepts_name_that_contains_only_letters()" />
@@ -472,6 +485,7 @@
     <MESSAGE value="deleted DniException, NameException, etc. Now exists an only class named DataException and is users by all attributes of user" />
     <MESSAGE value=" black space deleted" />
     <MESSAGE value="false exceptions eliminated in UserManager test" />
-    <option name="LAST_COMMIT_MESSAGE" value="false exceptions eliminated in UserManager test" />
+    <MESSAGE value="some warnings eliminated" />
+    <option name="LAST_COMMIT_MESSAGE" value="some warnings eliminated" />
   </component>
 </project>
