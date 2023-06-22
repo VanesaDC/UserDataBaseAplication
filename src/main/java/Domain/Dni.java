@@ -15,7 +15,7 @@ public class Dni {
         return dni;
     }
 
-    public static Dni createDni (String dni) throws DniException{
+    public static Dni createDni (String dni) throws DataException{
 
         final Pattern REGEXP = Pattern.compile("[0-9]{8}[A-Z]");
         final String DIGITO_CONTROL = "TRWAGMYFPDXBNJZSQVHLCKE";
@@ -24,7 +24,7 @@ public class Dni {
                 && REGEXP.matcher(dni).matches() // (2)
                 && dni.charAt(8) == DIGITO_CONTROL.charAt(Integer.parseInt(dni.substring(0, 8)) % 23); // (3);
         if (!isValid){
-            throw new DniException("El DNI que escribió no es válido.");
+            throw new DataException("El DNI que escribió no es válido.");
         }
         return new Dni(dni);
     }

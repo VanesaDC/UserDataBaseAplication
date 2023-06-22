@@ -11,6 +11,7 @@ public class UserManager {
     public UserManager(MySqlRepository mySqlRepository) {
         this.mySqlRepository = mySqlRepository;
     }
+
     public void saveUser (User user) throws MySqlRepositoryException {
         List<User> users = mySqlRepository.getUserByDni(user.getDni().getString());
         if (users.isEmpty()){
@@ -18,9 +19,7 @@ public class UserManager {
         }else{
             throw new MySqlRepositoryException("El usuario indicado ya está registrado en la base de datos.");
         }
-
     }
-
     public User getUserByDni(String dni) throws MySqlRepositoryException {
         List<User> users;
         users = mySqlRepository.getUserByDni(dni);
@@ -29,14 +28,10 @@ public class UserManager {
         }
         return users.get(0);
     }
-
-    //🐸 Test exception
     public void upDateUser(User userSolicited) throws MySqlRepositoryException{
         getUserByDni(userSolicited.getDni().getString());
         mySqlRepository.upDateUser(userSolicited);
     }
-
-    //🐸 Test exception
     public void deleteUser(String dni) throws MySqlRepositoryException {
         User user = getUserByDni(dni);
         mySqlRepository.deleteUser(user);

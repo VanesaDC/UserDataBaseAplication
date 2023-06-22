@@ -34,7 +34,7 @@ public class SecondWindowController {
             Age age= Age.createAge(edtAge.getText());
             Email email= Email.createEmail(edtEmail.getText());
             user = new User(dni, name, age,email);
-        } catch (EmailException | DniException | AgeException | NameException  e) {
+        } catch ( DataException e) {
             AlertPanel.showAttentionMessageSaying(e.getMessage());
         }
         return user;

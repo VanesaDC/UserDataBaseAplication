@@ -2,7 +2,6 @@ package DataBase;
 
 import Domain.*;
 import com.UI.AlertPanel;
-
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -18,7 +17,6 @@ public class MySqlRepository implements MySqlUserRepository {
             statement.setString(2, user.getName().getString());
             statement.setString(3, user.getAge().getString());
             statement.setString(4, user.getEmail().getString());
-
             int rowsInserted = statement.executeUpdate();
             if (rowsInserted > 0) {
                 AlertPanel.showInformationMessageSaying("El usuario se guardó correctamente.");
@@ -38,7 +36,6 @@ public class MySqlRepository implements MySqlUserRepository {
             statement.setString(1, user.getName().getString());
             statement.setString(2, user.getAge().getString());
             statement.setString(3, user.getEmail().getString());
-
             int rowsUpdated = statement.executeUpdate();
             if (rowsUpdated > 0) {
                 AlertPanel.showInformationMessageSaying("El usuario se actualizó con éxito");
@@ -64,8 +61,6 @@ public class MySqlRepository implements MySqlUserRepository {
         } catch (SQLException e) {
             AlertPanel.showAttentionMessageSaying("Algo raro pasó al tratar de eliminar al usuario");
         }
-
-
     }
 
     @Override
@@ -86,16 +81,9 @@ public class MySqlRepository implements MySqlUserRepository {
                     users.add(user);
                 }
                 connection.close();
-            } catch (SQLException | DniException | NameException | AgeException | EmailException e) {
+            } catch (SQLException |DataException e) {
                 AlertPanel.showAttentionMessageSaying("Sucededió un error al buscar el usuario en la base de datos." + e);
             }
             return users;
         }
-
-
-
-    @Override
-    public List<User> getAllUser() {
-        return null;
-    }
 }
