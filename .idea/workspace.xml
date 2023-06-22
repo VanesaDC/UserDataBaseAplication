@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4aa3c8b6-6ca2-4098-b8be-185d45a4e246" name="Changes" comment="UpdateUser created">
+    <list default="true" id="4aa3c8b6-6ca2-4098-b8be-185d45a4e246" name="Changes" comment="deleteUser created">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Aplication/UserManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Aplication/UserManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DataBase/MySqlRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DataBase/MySqlRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/UI/SecondWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/UI/SecondWindowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/UI/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/UI/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Aplication/UserManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Aplication/UserManagerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +70,7 @@
       <recent name="Domain" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.HelloApplication">
+  <component name="RunManager" selected="JUnit.UserManagerTest">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.UI.HelloApplication" />
       <module name="MySqlFx" />
@@ -149,8 +148,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.HelloApplication" />
         <item itemvalue="JUnit.UserManagerTest" />
+        <item itemvalue="Application.HelloApplication" />
         <item itemvalue="JUnit.UserManagerTest.should_throws_exception_when_user_is_already_registered" />
         <item itemvalue="JUnit.UserManagerTest.getUserByDni_should_throw_a_exception_when_the_dni_is_not_registered" />
         <item itemvalue="JUnit.NameTest" />
@@ -404,11 +403,17 @@
       <option name="project" value="LOCAL" />
       <updated>1687364374754</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="deleteUser created">
+      <created>1687366574469</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1687366574469</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="change in principal form scene" />
     <MESSAGE value="Change xmlns=&quot;http://javafx.com/javafx&quot; xmlns:fx=&quot;http://javafx.com/fxml&quot; in hello-view.fxml because caused problems.&#10;&#10;I found this solution here: https://stackoverflow.com/questions/35210120/javafx-fxml-api-version-warning&#10;&#10;so i chang it" />
     <MESSAGE value=" secondWindow.fxml created" />
     <MESSAGE value=" add image to secondWindow.fxml" />
@@ -433,6 +438,7 @@
     <MESSAGE value="name Name test changed" />
     <MESSAGE value="UserManager: getUserByDni_should_throw_a_exception_when_the_dni_is_not_registered()" />
     <MESSAGE value="UpdateUser created" />
-    <option name="LAST_COMMIT_MESSAGE" value="UpdateUser created" />
+    <MESSAGE value="deleteUser created" />
+    <option name="LAST_COMMIT_MESSAGE" value="deleteUser created" />
   </component>
 </project>
