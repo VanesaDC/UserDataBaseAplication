@@ -7,7 +7,6 @@ import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-
 import java.io.IOException;
 
 public class HelloController {
@@ -15,7 +14,7 @@ public class HelloController {
     private Label welcomeText;
 
     @FXML
-    protected void onHelloButtonClick() {
+    protected void openSecondWindow() {
 
         FXMLLoader loader = new FXMLLoader(getClass().getResource("secondWindow.fxml"));
         try {
@@ -27,7 +26,6 @@ public class HelloController {
             stage.setTitle("Formulario de datos");
             stage.setScene(scene);
             stage.showAndWait();
-
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

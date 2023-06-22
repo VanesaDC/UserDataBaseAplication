@@ -9,55 +9,62 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="500.0" maxWidth="700.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.UI.SecondWindowController">
+<BorderPane maxHeight="500.0" maxWidth="700.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.UI.SecondWindowController">
    <left>
       <AnchorPane prefHeight="480.0" prefWidth="250.0" BorderPane.alignment="CENTER">
-         <children>
-            <ImageView fitHeight="509.0" fitWidth="396.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@Registro.png" />
-               </image>
-            </ImageView>
-         </children>
+         <ImageView fitHeight="509.0" fitWidth="396.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true"><![CDATA[
+            ]]><Image url="@Registro.png"/>
+         </ImageView>
       </AnchorPane>
    </left>
    <center>
       <AnchorPane prefHeight="480.0" prefWidth="450.0" BorderPane.alignment="CENTER">
-         <children>
-            <TextField fx:id="edtDni" layoutX="36.0" layoutY="104.0" prefHeight="32.0" prefWidth="231.0" text="DNI" />
-            <TextField fx:id="edtName" layoutX="35.0" layoutY="151.0" prefHeight="32.0" prefWidth="233.0" text="Nombre" />
-            <TextField fx:id="edtAge" layoutX="36.0" layoutY="201.0" prefHeight="32.0" prefWidth="113.0" text="Edad" />
-            <TextField id="edtEmail" fx:id="edtEmail" layoutX="36.0" layoutY="250.0" prefHeight="32.0" prefWidth="113.0" text="email" />
-            <Button fx:id="btnSave" layoutX="35.0" layoutY="399.0" mnemonicParsing="false" onAction="#saveUser" onMouseEntered="#showInstructionsSave" prefHeight="23.0" prefWidth="114.0" style="-fx-background-color: #009688;" text="Guardar" textFill="WHITE">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Button>
-            <Button fx:id="btnSelect" layoutX="161.0" layoutY="399.0" mnemonicParsing="false" onAction="#selectUser" onMouseEntered="#showInstructionsSelect" prefHeight="23.0" prefWidth="114.0" style="-fx-background-color: #009688;" text="Buscar" textFill="WHITE">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Button>
-            <Button fx:id="btnUpDate" layoutX="287.0" layoutY="399.0" mnemonicParsing="false" onAction="#udDateUser" onMouseEntered="#showInstructionsUpDate" prefHeight="23.0" prefWidth="114.0" style="-fx-background-color: #009688;" text="Actualizar" textFill="WHITE">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Button>
-            <Button fx:id="btnDelete" layoutX="161.0" layoutY="448.0" mnemonicParsing="false" onAction="#deleteUser" onMouseEntered="#showInstructionsDelete" prefHeight="23.0" prefWidth="114.0" style="-fx-background-color: #E1BEE7;" text="Eliminar" textFill="#9e0648">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Button>
-            <Button fx:id="btnCancel" layoutX="287.0" layoutY="448.0" mnemonicParsing="false" onAction="#closeSecondWindow" prefHeight="23.0" prefWidth="114.0" style="-fx-background-color: #009688;" text="Cancelar" textFill="WHITE">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Button>
-            <Label layoutX="36.0" layoutY="32.0" prefHeight="50.0" prefWidth="378.0" text="Datos del usuario">
-               <font>
-                  <Font size="24.0" />
-               </font>
-            </Label>
-         </children></AnchorPane>
+
+         <TextField fx:id="edtDni" layoutX="36.0" layoutY="104.0" prefHeight="32.0" prefWidth="231.0" text="DNI"/>
+         <TextField fx:id="edtName" layoutX="35.0" layoutY="151.0" prefHeight="32.0" prefWidth="233.0" text="Nombre"/>
+         <TextField fx:id="edtAge" layoutX="36.0" layoutY="201.0" prefHeight="32.0" prefWidth="113.0" text="Edad"/>
+         <TextField id="edtEmail" fx:id="edtEmail" layoutX="36.0" layoutY="250.0" prefHeight="32.0" prefWidth="113.0"
+                    text="email"/>
+         <Button fx:id="btnSave" layoutX="35.0" layoutY="399.0" mnemonicParsing="false" onAction="#saveUser"
+                 onMouseEntered="#showInstructionsSave" prefHeight="23.0" prefWidth="114.0"
+                 style="-fx-background-color: #009688;" text="Guardar" textFill="WHITE">
+            <font>
+               <Font size="14.0"/>
+            </font>
+         </Button>
+         <Button fx:id="btnSelect" layoutX="161.0" layoutY="399.0" mnemonicParsing="false" onAction="#selectUser"
+                 onMouseEntered="#showInstructionsSelect" prefHeight="23.0" prefWidth="114.0"
+                 style="-fx-background-color: #009688;" text="Buscar" textFill="WHITE">
+            <font>
+               <Font size="14.0"/>
+            </font>
+         </Button>
+         <Button fx:id="btnUpDate" layoutX="287.0" layoutY="399.0" mnemonicParsing="false" onAction="#upDateUser"
+                 onMouseEntered="#showInstructionsUpDate" prefHeight="23.0" prefWidth="114.0"
+                 style="-fx-background-color: #009688;" text="Actualizar" textFill="WHITE">
+            <font>
+               <Font size="14.0"/>
+            </font>
+         </Button>
+         <Button fx:id="btnDelete" layoutX="161.0" layoutY="448.0" mnemonicParsing="false" onAction="#deleteUser"
+                 onMouseEntered="#showInstructionsDelete" prefHeight="23.0" prefWidth="114.0"
+                 style="-fx-background-color: #E1BEE7;" text="Eliminar" textFill="#9e0648">
+            <font>
+               <Font size="14.0"/>
+            </font>
+         </Button>
+         <Button fx:id="btnCancel" layoutX="287.0" layoutY="448.0" mnemonicParsing="false" onAction="#closeSecondWindow"
+                 prefHeight="23.0" prefWidth="114.0" style="-fx-background-color: #009688;" text="Cancelar"
+                 textFill="WHITE">
+            <font>
+               <Font size="14.0"/>
+            </font>
+         </Button>
+         <Label layoutX="36.0" layoutY="32.0" prefHeight="50.0" prefWidth="378.0" text="Datos del usuario">
+            <font>
+               <Font size="24.0"/>
+            </font>
+         </Label>
+      </AnchorPane>
    </center>
 </BorderPane>

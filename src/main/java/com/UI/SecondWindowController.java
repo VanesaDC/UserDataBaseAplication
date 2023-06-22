@@ -18,8 +18,6 @@ public class SecondWindowController {
     MySqlRepository mySqlRepository = new MySqlRepository();
     UserManager userManager = new UserManager(mySqlRepository);
 
-
-
     private void cleanText() {
         edtDni.setText("");
         edtName.setText("");
@@ -58,12 +56,11 @@ public class SecondWindowController {
             AlertPanel.showAttentionMessageSaying(e.getMessage());
         }
     }
-    public void udDateUser(){
+    public void upDateUser(){
         try {
             User user = createUser();
             userManager.upDateUser(user);
             cleanText();
-
         } catch ( MySqlRepositoryException e) {
             AlertPanel.showAttentionMessageSaying(e.getMessage());
         }
@@ -71,10 +68,10 @@ public class SecondWindowController {
     public void deleteUser(){
         try {
             userManager.deleteUser(edtDni.getText());
+            cleanText();
         } catch (MySqlRepositoryException e) {
             AlertPanel.showAttentionMessageSaying(e.getMessage());
         }
-        cleanText();
     }
 
     public void closeSecondWindow(){
